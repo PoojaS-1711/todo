@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    
+    <meta charset = "utf-8">
+
+    <meta name = "viewport" content = "width = device - width,  initial-scale = 1.0">
+
+    <title>
+
+        To-Do-List App - DOM Manipulation
+
+    </title>
+
+    <link rel = "stylesheet" href = "styles.css">
+
+</head>
+
+<body>
+
+    <div class = "container">
+
+        <h1>To-Do-List</h1>
+
+        <div class = "input-type">
+
+            <select id="taskCategory">
+                
+                <option value="Daily Must-Dos">
+                    
+                    Daily Must-Dos
+                
+                </option>
+                
+                <option value="Professional & Work">
+                    
+                    Professional & Work
+                
+                </option>
+                
+                <option value="Chores & Errands">
+                    
+                    Chores & Errands
+                
+                </option>
+                
+                <option value="Health & Wellness">
+                    
+                    Health & Wellness
+                
+                </option>
+                
+                <option value="Personal Goals & Learning">
+                    
+                    Personal Goals & Learning
+                
+                </option>
+                
+                <option value="Long-Term / Someday">
+                    
+                    Long-Term / Someday
+                
+                </option>
+
+            </select>
+
+            <input 
+            type = "text"
+            id = "taskInput"
+            placeholder = "Enter the Task"
+            />
+
+            <button id = "addTaskBtn">
+
+                Add Task 
+
+            </button>
+
+        </div>
+
+        <div class = "filters">
+
+            <button data-filter = "all">
+
+                All Tasks
+
+            </button>
+
+            <button data-filter = "active">
+
+                Active Tasks
+
+            </button>
+
+            <button data-filter = "completed">
+
+                Completed Tasks
+
+            </button>
+
+        </div>
+
+        <ul id = "taskList"></ul>
+
+    </div>
+
+    <script src = "script.js"></script>
+
+</body>
+
+</html>
